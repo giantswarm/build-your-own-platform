@@ -1,0 +1,15 @@
+apiVersion: repo.github.upbound.io/v1alpha1
+kind: Repository
+metadata:
+  name: fer-example
+spec:
+  providerConfigRef:
+    name: default
+  forProvider:
+    description: My test repo
+    name: fer-example
+    template:
+    - includeAllBranches: true
+      owner: mediona
+      repository: template-node
+    visibility: public

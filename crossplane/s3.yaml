@@ -1,0 +1,19 @@
+apiVersion: s3.aws.crossplane.io/v1beta1
+kind: Bucket
+metadata:
+  name: crossplane-bucket
+spec:
+  forProvider:
+    accelerateConfiguration:
+      status: Enabled
+    locationConstraint: eu-central-1
+    serverSideEncryptionConfiguration:
+      rules:
+        - applyServerSideEncryptionByDefault:
+            sseAlgorithm: AES256
+    tagging:
+      tagSet:
+        - key: fer
+          value: testing
+  providerConfigRef:
+    name: aws
