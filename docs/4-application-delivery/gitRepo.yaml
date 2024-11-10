@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: configuration-management
+  namespace: default
+spec:
+  interval: 5m0s
+  url: https://github.com/giantswarm/build-your-own-platform
+  ref:
+    branch: main

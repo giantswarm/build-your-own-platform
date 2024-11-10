@@ -1,0 +1,13 @@
+roles: kube,app,discovery
+authToken: $TELEPORT_AUTH_TOKEN
+proxyAddr: build-your-own-platform.teleport.sh:443
+kubeClusterName: $CLUSTER_NAME
+enterprise: true
+updater:
+    enabled: true
+    releaseChannel: "stable/cloud"
+highAvailability:
+    replicaCount: 2
+    podDisruptionBudget:
+        enabled: true
+        minAvailable: 1
