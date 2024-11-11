@@ -8,7 +8,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: configuration-management
-  serviceAccountName: kustomize-controller
   path: ./config/infrastructure/ingress-controller
   prune: true
   wait: true
