@@ -24,6 +24,12 @@ spec:
         name: ingress-nginx
         namespace: default
   interval: 5m
+  install:
+    remediation:
+      retries: 3
+  upgrade:
+    remediation:
+      retries: 3
   values:
     controller:
       replicaCount: 2
