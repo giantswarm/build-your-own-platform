@@ -6,11 +6,11 @@ The platform is based on Kubernetes and uses Helm to deploy applications. It als
 
 ## Table of contents
 
-0. [Base platform](docs/0-base-platform.md)
-1. [Create your workload cluster](docs/1-create-workload-cluster.md)
-2. [Deploy your application](docs/2-deploy.md)
-3. [Configuration management](docs/3-configuration-management.md)
-4. [Application delivery](docs/4-application-delivery.md)
-5. [Observability](docs/5-observability.md)
-6. [Security](docs/6-security.md)
-7. [Golden path](docs/7-golden-path.md)
+0. [Base platform](./0-base-platform)
+1. [Create your workload cluster](./1-create-workload-cluster)
+2. [Deploy your application](./2-deploy)
+3. [Configuration management](./3-configuration-management)
+4. [Application delivery](./4-application-delivery)
+5. [Observability](./5-observability)
+6. [Security](./6-security)
+7. [Golden path](./7-golden-path)
