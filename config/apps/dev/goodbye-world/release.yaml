@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: goodbye-world
+  namespace: goodbye-world
+spec:
+  releaseName: goodbye-world
+  chart:
+    spec:
+      chart: goodbye-world
+      sourceRef:
+        kind: HelmRepository
+        name: goodbye-world
+  interval: 10m
+  install:
+    remediation:
+      retries: 3
+  values:
+    replicaCount: 1
